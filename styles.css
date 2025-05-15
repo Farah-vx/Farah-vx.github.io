@@ -9,12 +9,11 @@ img {
   height: auto;
 }
 
-   
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #000000;
-   }
+}
 
 header {
   background-color: #dedede;
@@ -22,30 +21,37 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
-  width: 100%;
-  z-index: 3;
+  flex-wrap: wrap;
 }
+
+header h1 {
+  font-size: 1.8rem;
+  color: #000;
+}
+
 h1.site-title {
   color: #000000;
   font-weight: 600;
   font-size: 1.8rem;
-   }
+}
+ 
 nav a {
-  color: #000000;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   text-decoration: none;
+  color: #000;
   font-weight: 600;
-   }
-nav a:hover {
-  color: #8c0000;
-   }
+  }
+ 
+ nav a:hover,
+ nav a.active {
+    color: #8c0000;
+}
+
 .auto-swipe {
   height: 100vh;
   overflow: hidden;
   position: relative;
-     
-   }
+}
 
 .auto-swipe img {
   position: absolute;
@@ -55,21 +61,21 @@ nav a:hover {
   animation: slide 24s infinite;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  z-index: 0; /* Add this line */
-  }
+  z-index: 0;
+}
 
-   
 .auto-swipe img:nth-child(1) { animation-delay: 0s; }
 .auto-swipe img:nth-child(2) { animation-delay: 6s; }
 .auto-swipe img:nth-child(3) { animation-delay: 12s; }
 .auto-swipe img:nth-child(4) { animation-delay: 18s; }
+
 @keyframes slide {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    25% { opacity: 1; }
-    30% { opacity: 0; }
-    100% { opacity: 0; }
-   }
+  0% { opacity: 0; }
+  5% { opacity: 1; }
+  25% { opacity: 1; }
+  30% { opacity: 0; }
+  100% { opacity: 0; }
+}
 
 .auto-swipe::before {
   content: '';
@@ -100,7 +106,7 @@ nav a:hover {
   border-bottom: 3px solid #c00000;
   display: inline-block;
   line-height: 1.3;
-}  
+}
 
 .section {
   padding: 4rem 2rem;
@@ -118,115 +124,63 @@ nav a:hover {
 }
 
 .rotate {
-  position: relative;
-  width: 100%;
   overflow: hidden;
 }
 
 .rotate-track {
   display: flex;
-  transition: transform 1s ease-in-out;
   width: 300%;
+  animation: slidePackages 25s infinite;
+  gap: 2rem;
+}
+@keyframes slidePackages {
+  0% { transform: translateX(0); }
+  33.33% { transform: translateX(-33.33%); }
+  66.66% { transform: translateX(-66.66%); }
+  100% { transform: translateX(-33.33%); }
 }
 
 .package-card {
-  display:flex;
-  flex: 0 0 100%;
+  width: 100%;
   background: #fafafa;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  padding-right: 2rem;
-     
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+
 .package-card img {
-  width: 10%;
+  width: 30%;
   height: auto;
   object-fit: cover;
+  margin-right: 1rem;
+}
+
+.package-card .package-info {
+  width: 70%;
 }
 .package-card h3 {
-  padding: 1rem;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   color: #8c0000;
-  text-align: left; 
+  margin-bottom: 0.5rem;
 }
+
 .package-card p {
-  padding: 0 1rem 1rem;
+  font-size: 1rem;
   color: #555;
-  margin-top: 6.2rem ;
-  margin-left: -47.5rem;
-     
-    
-}
-.rotate-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 0.5rem;
-}
-.rotate-indicators span {
-  width: 12px;
-  height: 12px;
-  background-color: #ccc;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.rotate-indicators .active {
-     background-color: #8c0000;
+  margin-bottom: 1rem;
 }
 
-
-
-.details-button {
-  align-self: flex-end;
-  background-color: #152651;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.7rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-left: 1.5rem;
-  margin-bottom: 0.5rem;
-  
-}
-
-.details-button-2{
-  align-self: flex-end;
-  background-color: #152651;
-  color: #fff;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.7rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: right;
-  margin-left: -4rem;
-  margin-bottom: 0.5rem;
-}
-
-.details-button:hover {
-  background-color: #29388a;
-}
-
-.price {
-  text-align: right;
-  padding-left: 18rem;
-  margin-top: 0.5rem;
-
+.package-card .price {
+  margin-bottom: 1rem;
 }
 
 .price .from {
   font-size: 0.85rem;
   color: #333;
- 
 }
 
 .price .amount {
@@ -239,6 +193,44 @@ nav a:hover {
 .price .per-person {
   font-size: 0.8rem;
   color: #444;
+}
+
+.package-card .details-button {
+  align-self: flex-start;
+  background-color: #152651;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.7rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.details-button:hover {
+  background-color: #29388a;
+}
+
+.rotate-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.rotate-indicators span {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rotate-indicators .active {
+  background-color: #8c0000;
 }
 
 footer {
@@ -293,7 +285,7 @@ footer {
 .social-icons img {
   width: 24px;
   height: 24px;
-  filter: invert(100%)  grayscale(100%);
+  filter: invert(100%) grayscale(100%);
   transition: transform 0.3s ease;
 }
 
@@ -310,50 +302,40 @@ footer {
   border-top: 1px solid #333;
 }
 
-/* Responsive Design for Tablets and Smaller Screens */
+/* Responsive Design */
 @media screen and (max-width: 768px) {
   .auto-swipe {
     height: 60vh;
   }
 
   .main h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
   }
 
   .rotate-track {
-    flex-direction: column;
-    align-items: center;
+    width: 300%;
   }
 
   .package-card {
-    flex: 0 0 100%;
     flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+    width: 100%;
   }
 
   .package-card img {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 
-  .package-card h3,
-  .package-card p,
-  .price,
-  .details-button,
-  .details-button-2 {
-    margin: 0.5rem 0;
-    text-align: center;
+  .package-card .package-info {
+    width: 100%;
   }
 
-  .price {
-    padding-left: 0;
-  }
-
-  .details-button,
-  .details-button-2 {
-    margin-left: 0;
+  .section h2 {
+    font-size: 1.5rem;
   }
 
   .footer-container {
@@ -366,21 +348,9 @@ footer {
   }
 }
 
-/* Responsive Design for Mobile Phones */
 @media screen and (max-width: 480px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    margin: 0.5rem 0;
-    display: block;
-  }
-
   .main h1 {
-    font-size: 1.5rem;
-    padding: 0 1rem;
+    font-size: 1.4rem;
   }
 
   .section h2 {
@@ -388,15 +358,10 @@ footer {
   }
 
   .package-card h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .price .amount {
     font-size: 1.2rem;
   }
-
-  .rotate {
-    padding: 0 1rem;
-  }
 }
-
