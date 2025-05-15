@@ -1,203 +1,218 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f8f9fb;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fb;
+  color: #333;
 }
 
-
 header {
-    background-color: #dedede;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  background-color: #dedede;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    color: #000;
+  font-size: 1.8rem;
+  color: #000;
 }
 
 h1.site-title {
-    color: #000000;
-    font-weight: 600;
-    font-size: 1.8rem;
+  color: #000000;
+  font-weight: 600;
+  font-size: 1.8rem;
 }
- 
+
 nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
-  }
- 
- nav a:hover,
- nav a.active {
-    color: #8c0000;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a.active {
+  color: #8c0000;
 }
 
 .booking-head {
-    background: linear-gradient(rgba(0, 0, 0, 0.409), rgba(0, 0, 0, 0.34)),
-                url('https://going-cms-strapi.s3.us-east-1.amazonaws.com/web_1920x1200_dotonbori_ecfbde0187.webp') no-repeat center center/cover;
-    color: #fff;
-    padding: 8rem 2rem;
-    text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.409), rgba(0, 0, 0, 0.34)),
+    url('https://going-cms-strapi.s3.us-east-1.amazonaws.com/web_1920x1200_dotonbori_ecfbde0187.webp') no-repeat center center/cover;
+  color: #fff;
+  padding: 8rem 2rem;
+  text-align: center;
 }
 
-
 .booking-head h1 {
-    font-size: 2.8rem;
-    margin-bottom: 0.5rem;
-    font-family: "Electrolize", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-family: "Electrolize", sans-serif;
 }
 
 .booking-head p {
-    font-size: 1.1rem;}
+  font-size: 1.1rem;
+}
 
 .container {
-    max-width: 1000px;
-    margin: 6rem 15rem;
-    padding: 0 1rem;
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 0 1rem;
 }
 
 .booking-form {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .booking-form h2 {
-    margin-bottom: 1.5rem;
-    font-size: 1.8rem;
-    text-align: center;
-    color: #0a0a23;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #0a0a23;
 }
 
 .form-group {
-    margin-bottom: 1.2rem;}
+  margin-bottom: 1.2rem;
+}
 
 .form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
 
 .form-group textarea {
-    resize: vertical;
-    height: 100px;
-  }
+  resize: vertical;
+  height: 100px;
+}
 
 .submit-booking {
-    background-color: #e63946;
-    color: white;
-    padding: 0.8rem 2rem;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-content: end;
-    text-decoration: none;
+  background-color: #e63946;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
 }
 
-.submit-booking :hover {
-    background-color: #c62828;
+.submit-booking:hover {
+  background-color: #c62828;
 }
 
+@media (max-width: 768px) {
+  .booking-head h1 {
+    font-size: 2rem;
+  }
 
- @media (max-width: 768px) {
-    booking-head h1 {
-      font-size: 2rem;
-    }
+  .booking-form h2 {
+    font-size: 1.5rem;
+  }
 
-    .booking-form h2 {
-      font-size: 1.5rem;
-    }
+  .container {
+    margin: 2rem auto;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .submit-booking {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
 
 footer {
-    background-color: #111;
-    color: #fff;
-    padding: 3rem 1rem 1rem;
+  background-color: #111;
+  color: #fff;
+  padding: 3rem 1rem 1rem;
 }
 
 .footer-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .footer-column h3,
 .footer-column h4 {
-    color: #ffffff;
-    margin-bottom: 1rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .footer-column p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 .footer-column ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #e63946;
+  color: #e63946;
 }
 
 .social-icons a {
-    margin-right: 0.5rem;
-    display: inline-block;
+  margin-right: 0.5rem;
+  display: inline-block;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
-    filter: invert(100%)  grayscale(100%);
-    transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) grayscale(100%);
+  transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .footer-end {
-    text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    color: #aaa;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  color: #aaa;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
 }
