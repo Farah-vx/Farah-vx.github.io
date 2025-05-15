@@ -137,7 +137,7 @@ nav a {
   0% { transform: translateX(0); }
   33.33% { transform: translateX(-33.33%); }
   66.66% { transform: translateX(-66.66%); }
-  100% { transform: translateX(-33.33%); }
+  100% { transform: translateX(0%); }
 }
 
 .package-card {
@@ -153,8 +153,8 @@ nav a {
 }
 
 .package-card img {
-  width: 30%;
-  height: auto;
+  width: 35%;
+  height: 250px;
   object-fit: cover;
   margin-right: 1rem;
 }
