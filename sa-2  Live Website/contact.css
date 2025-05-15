@@ -92,7 +92,7 @@ nav a {
 }
 
 .contact-card-2 {
-    background-color: #171717;
+    background-color: #7e8a9c;
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 2rem;
@@ -149,6 +149,7 @@ iframe {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-right: 6rem;
+    
 }
 
 .form-box input,
