@@ -80,7 +80,7 @@ nav a {
 }
 
 .contact-card {
-    background-color: #fff;
+    background-color: #e6e6e664;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 2rem;
@@ -91,28 +91,7 @@ nav a {
     font-family: "Electrolize", sans-serif;
 }
 
-.contact-card-2 {
-    background-color: #7e8a9c;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: center;
-    width: 193px;
-    height: 170px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    font-family: "Electrolize", sans-serif;
-}
 
-.contact-card-2 h3 {
-    margin-bottom: 0.5rem;
-    color: #f54c4c;
-    
-}
-
-.contact-card-2 p {
-    font-size: 0.85rem;
-    color: #eaeaea;
-}
 
 
 .contact-card h3 {
