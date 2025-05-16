@@ -1,199 +1,260 @@
 * {
+    /* reset default margin and padding */
     margin: 0;
     padding: 0;
+    /* include padding and border in element's total width and height */
     box-sizing: border-box;
  }
 
 body {
+     /* set background color , font family and text color */
     background-color: #f8f9fb;
     color: #333;
     font-family: 'Segoe UI', sans-serif;
 }
 
 header {
-    background-color: #dedede;
-    padding: 1rem 2rem;
-    display: flex;
+    background-color: #dedede; /* set background color*/
+    padding: 1rem 2rem;/*padding */
+    display: flex;/* display header as a flexible container */
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
 header h1 {
+     /* set font size and color */
     font-size: 1.8rem;
     color: #000;
 }
 
+/* navigation link styles */
 nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    color: #000;
-    font-weight: 600;
+    margin-left: 1rem; /* add margin to the left of each link */
+    text-decoration: none;/* remove text decoration  */
+    color: #000;  /* set color  */
+    font-weight: 600;  /* set font weight */
 }
 
+/* navigation link hover and active styles */
 nav a:hover,
 nav a.active {
+     /* set color on hover and active */
     color: #8c0000;
 }
 
+/* thank you head styles */
 .TY-head {
+    /* set background image and gradient */
     background: linear-gradient(rgba(0, 0, 0, 0.358), rgba(0, 0, 0, 0.34)),
     url('https://www.planetware.com/wpimages/2020/08/japan-best-cities-fukuoka.jpg') no-repeat center center/cover;
+    /* set text color and padding */
     color: #fff;
     padding: 4rem 2rem;
-    text-align: center;
+    text-align: center;/* center text */
 }
 
+/* thank you head title styles */
 .TY-head h1 {
+    /* set font size and margin */
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
 }
 
+/* thank you head paragraph styles */
 .TY-head p {
+    /* set font size */
     font-size: 1.1rem;
 }
 
+/* container styles */
 .container {
+    /* set max width and center horizontally */
     max-width: 1100px;
     margin: auto;
+    /* add padding */
     padding: 4rem 2rem;
+    /* center text */
     text-align: center;
 }
 
+/* message styles */
 .message h2 {
+    /* set color and font family */
     color: #e63946;
     font-family: "Electrolize", sans-serif;
+    /* add padding and margin */
     padding: 1.4rem;
     margin-top: -3rem;
+    /* set font size */
     font-size: 2rem;
     margin-bottom: 2rem;
 }
 
+/* message paragraph styles */
 .message p {
+    /* set font size */
     font-size: 1.2rem;
 }
 
+/* return button styles */
 .return-button {
+    /* set background color and text color */
     background-color: #e63946;
     color: white;
+    /* add padding and border radius */
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 6px;
+    /* set font size and cursor */
     font-size: 1.2rem;
     cursor: pointer;
+    /* add transition effect */
     transition: background-color 0.3s ease;
+    /* remove text decoration and display as inline block */
     text-decoration: none;
     display: inline-block;
     margin-top: 2rem;
     
 }
 
+/* return button hover styles */
 .return-button:hover {
+    /* set background color on hover */
     background-color: #c62828;
 }
 
+/* footer styles */
 footer {
+    /* set background color and text color */
     background-color: #111;
     color: #fff;
-    padding: 3rem 1rem 1rem;
+    padding: 3rem 1rem 1rem; /* add padding */
 }
-
+/* footer container styles */
 .footer-container {
+    /* display as grid and set columns */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* add gap and max width */
     gap: 2rem;
     max-width: 1200px;
     margin: auto;
 }
 
+/* footer column styles */
 .footer-column h3,
 .footer-column h4 {
-    color: #ffffff;
-    margin-bottom: 1rem;
+  /* set text color and margin */
+  color: #ffffff;
+  margin-bottom: 1rem;
 }
 
 .footer-column p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  /* set font size and line height */
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
+/* footer list styles */
 .footer-column ul {
-    list-style: none;
-    padding: 0;
+  /* remove list style and padding */
+  list-style: none;
+  padding: 0;
 }
 
 .footer-column ul li {
-    margin-bottom: 0.5rem;
+  /* add margin */
+  margin-bottom: 0.5rem;
 }
 
 .footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  /* set text color and transition effect */
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-column ul li a:hover {
-    color: #e63946;
+  /* set text color on hover */
+  color: #e63946;
 }
 
+/* social icon styles */
 .social-icons a {
-    margin-right: 0.5rem;
-    display: inline-block;
+  /* add margin and display as inline block */
+  margin-right: 0.5rem;
+  display: inline-block;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
-    filter: invert(100%)  grayscale(100%);
-    transition: transform 0.3s ease;
+  /* set width and height */
+  width: 24px;
+  height: 24px;
+  /* add filter and transition effect */
+  filter: invert(100%) grayscale(100%);
+  transition: transform 0.3s ease;
 }
 
 .social-icons img:hover {
-    transform: scale(1.2);
+  /* scale on hover */
+  transform: scale(1.2);
 }
 
+/* footer end styles */
 .footer-end {
-    text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    color: #aaa;
-    font-size: 0.9rem;
-    border-top: 1px solid #333;
+  /* center text and add padding and margin */
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  /* set text color and font size */
+  color: #aaa;
+  font-size: 0.9rem;
+  /* add border top */
+  border-top: 1px solid #333;
 }
 
+/* media query for small screens */
 @media (max-width: 768px) {
-    header {
+  /* adjust header styles */
+  header {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
-    }
+  }
 
-    header h1 {
+  header h1 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    }
+  }
 
-    nav {
+  nav {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    }
+  }
 
-    .TY-head h1 {
+  /* adjust thank you head title styles */
+  .TY-head h1 {
     font-size: 2rem;
-    }
+  }
 
-    .message h2 {
+  /* adjust message styles */
+  .message h2 {
     font-size: 1.5rem;
-    }
+  }
 
-    .message p {
+  .message p {
     font-size: 1rem;
-    }
+  }
 
-    .return-button {
+  /* adjust return button styles */
+  .return-button {
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
-    }
+  }
 }
+
+
+
