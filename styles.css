@@ -1,20 +1,23 @@
+/* reset styles for consistent rendering */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* make images responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
+/* base body styles */
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
   color: #000000;
 }
 
+/* header container styling */
 header {
   background-color: #dedede;
   padding: 1rem 2rem;
@@ -25,10 +28,12 @@ header {
   
 }
 
+/* main site title styling */
 header h1 {
   font-size: 1.8rem;
   color: #000;
 }
+
 
 h1.site-title {
   color: #000000;
@@ -36,6 +41,7 @@ h1.site-title {
   font-size: 1.8rem;
 }
  
+/* navigation link styles */
 nav a {
   margin-left: 1rem;
   text-decoration: none;
@@ -48,12 +54,14 @@ nav a {
     color: #8c0000;
 }
 
+/* container for auto-swiping background images */
 .auto-swipe {
   height: 100vh;
   overflow: hidden;
   position: relative;
 }
 
+/* styles for background images in swipe animation */
 .auto-swipe img {
   position: absolute;
   width: 100%;
@@ -65,11 +73,13 @@ nav a {
   z-index: 0;
 }
 
+/* animation delays for swipe effect */
 .auto-swipe img:nth-child(1) { animation-delay: 0s; }
 .auto-swipe img:nth-child(2) { animation-delay: 6s; }
 .auto-swipe img:nth-child(3) { animation-delay: 12s; }
 .auto-swipe img:nth-child(4) { animation-delay: 18s; }
 
+/* keyframes for fade-in and fade-out swipe effect */
 @keyframes slide {
   0% { opacity: 0; }
   5% { opacity: 1; }
@@ -78,6 +88,7 @@ nav a {
   100% { opacity: 0; }
 }
 
+/* gradient overlay for better text visibility */
 .auto-swipe::before {
   content: '';
   position: absolute;
@@ -90,6 +101,7 @@ nav a {
   pointer-events: none;
 }
 
+/* main heading container styles */
 .main {
   position: absolute;
   top: 30%;
@@ -98,6 +110,7 @@ nav a {
   text-align: left;
 }
 
+/* main heading styles */
 .main h1 {
   font-size: 3rem;
   color: #ffffff;
@@ -109,12 +122,14 @@ nav a {
   line-height: 1.3;
 }
 
+/* generic section container styles */
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* section heading styles */
 .section h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -124,16 +139,19 @@ nav a {
   display: inline-block;
 }
 
+/* container for rotating packages */
 .rotate {
   overflow: hidden;
 }
 
+/* track for horizontally rotating package cards */
 .rotate-track {
   display: flex;
   width: 300%;
   animation: slidePackages 25s infinite;
   gap: 2rem;
 }
+/* keyframes for horizontal slide animation */
 @keyframes slidePackages {
   0% { transform: translateX(0); }
   33.33% { transform: translateX(-33.33%); }
@@ -141,6 +159,7 @@ nav a {
   100% { transform: translateX(0%); }
 }
 
+/* individual package card styles */
 .package-card {
   width: 100%;
   background: #fafafa;
@@ -153,6 +172,7 @@ nav a {
   align-items: center;
 }
 
+/* image styles inside package card */
 .package-card img {
   width: 35%;
   height: 250px;
@@ -160,30 +180,36 @@ nav a {
   margin-right: 1rem;
 }
 
+/* text content area inside package card */
 .package-card .package-info {
   width: 70%;
 }
+/* package title styles */
 .package-card h3 {
   font-size: 1.5rem;
   color: #8c0000;
   margin-bottom: 0.5rem;
 }
 
+/* package description text */
 .package-card p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 1rem;
 }
 
+/* price container */
 .package-card .price {
   margin-bottom: 1rem;
 }
 
+/* small "from" label */
 .price .from {
   font-size: 0.85rem;
   color: #333;
 }
 
+/* main price amount */
 .price .amount {
   font-size: 1.5rem;
   font-weight: bold;
@@ -191,11 +217,13 @@ nav a {
   display: block;
 }
 
+/* per person label */
 .price .per-person {
   font-size: 0.8rem;
   color: #444;
 }
 
+/* button for more details */
 .package-card .details-button {
   align-self: flex-start;
   background-color: #152651;
@@ -210,10 +238,12 @@ nav a {
   text-decoration: none;
 }
 
+/* hover state for details button */
 .details-button:hover {
   background-color: #29388a;
 }
 
+/* container for swipe indicators */
 .rotate-indicators {
   display: flex;
   justify-content: center;
@@ -221,6 +251,7 @@ nav a {
   gap: 0.5rem;
 }
 
+/* individual indicator styles */
 .rotate-indicators span {
   width: 12px;
   height: 12px;
@@ -230,16 +261,19 @@ nav a {
   cursor: pointer;
 }
 
+/* active state for current indicator */
 .rotate-indicators .active {
   background-color: #8c0000;
 }
 
+/* footer container styles */
 footer {
   background-color: #111;
   color: #fff;
   padding: 3rem 1rem 1rem;
 }
 
+/* footer grid layout */
 .footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -248,41 +282,49 @@ footer {
   margin: auto;
 }
 
+/* footer heading styles */
 .footer-column h3,
 .footer-column h4 {
   color: #ffffff;
   margin-bottom: 1rem;
 }
 
+/* footer paragraph styles */
 .footer-column p {
   font-size: 0.95rem;
   line-height: 1.6;
 }
 
+/* list styling in footer */
 .footer-column ul {
   list-style: none;
   padding: 0;
 }
 
+/* list item spacing */
 .footer-column ul li {
   margin-bottom: 0.5rem;
 }
 
+/* footer links */
 .footer-column ul li a {
   color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
+/* footer link hover effect */
 .footer-column ul li a:hover {
   color: #e63946;
 }
 
+/* container for social media icons */
 .social-icons a {
   margin-right: 0.5rem;
   display: inline-block;
 }
 
+/* icon styles with filter and hover effect */
 .social-icons img {
   width: 24px;
   height: 24px;
@@ -290,10 +332,12 @@ footer {
   transition: transform 0.3s ease;
 }
 
+
 .social-icons img:hover {
   transform: scale(1.2);
 }
 
+/* footer copyright and end section */
 .footer-end {
   text-align: center;
   padding-top: 2rem;
@@ -303,7 +347,7 @@ footer {
   border-top: 1px solid #333;
 }
 
-/* Responsive Design */
+/* responsive styles for tablet screens */
 @media screen and (max-width: 768px) {
   .auto-swipe {
     height: 60vh;
