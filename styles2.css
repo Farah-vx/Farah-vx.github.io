@@ -1,243 +1,230 @@
 /* Reset & Base */
 * {
+  /* reset margins and padding */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.6;
-  overflow-x: hidden;
+  font-family: 'Open Sans', sans-serif;/* set font family  */
+  background-color: #ffffff; /* set background color */
+  color: #1a1a1a; /* set text color */
+  line-height: 1.6; /* set line height */
+  overflow-x: hidden;/* hide horizontal overflow */
    
 }
   
 
-@media (max-width: 768px) {
-  .package-detail {
-    flex-direction: column;
-    align-items: center;}
-  .section h2 {
-    font-size: 1.5rem;
-  }
-
-  .detail-img,
-  .detail-content {
-    width: 100%;
-  }}
-
+/* image styles */
 img {
-    max-width: 100%;
-    display: block;
+    max-width: 100%;  /* make images responsive */
+    display: block;  /* display images as block elements */
   }
   
-  /* Header */
+/* Header  styles*/
 header {
-  background-color: #dedede;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: #dedede; /* set background color */
+  padding: 1rem 2rem;/* add padding */
+  display: flex;/* display header as flex container */
+  justify-content: space-between; /* justify content horizontally */
+  align-items: center;/* align items vertically */
+  flex-wrap: wrap; /* wrap elements to next line */
 }
 
 header h1 {
-  font-size: 1.8rem;
-  color: #000;
+  font-size: 1.8rem;/* set font size */
+  color: #000;/* set text color */
 }
 
 h1.site-title {
-  color: #000000;
-  font-weight: 600;
-  font-size: 1.8rem;
+  color: #000000; /* set text color */
+  font-weight: 600;  /* set font weight */
+  font-size: 1.8rem; /* set font size */
 }
  
+/* navigation styles */
 nav a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
+  margin-left: 1rem; /* add margin */
+  text-decoration: none;  /* remove text decoration */
+  color: #000;/* set text color */
+  font-weight: 600; /* set font weight */
   }
  
  nav a:hover,
  nav a.active {
-    color: #8c0000;
+    color: #8c0000; /* set hover and active link color */
 }
   
-  /* Section */
+/* section styles */
 .section {
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: auto;
+  padding: 4rem 2rem; /* add padding */
+  max-width: 1200px; /* set max width */
+  margin: auto;/* center horizontally */
 }
 
 .section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 2px solid #8c0000;
-  display: inline-block;
-  padding-bottom: 0.5rem;
-  font-family: "Geo", sans-serif;
+  font-size: 2rem; /* set font size */
+  margin-bottom: 2rem; /* add margin bottom */
+  border-bottom: 2px solid #8c0000;/* add border bottom */
+  display: inline-block;/* display as inline block */
+  padding-bottom: 0.5rem;/* add padding bottom */
+  font-family: "Geo", sans-serif;/* set font family */
+
+  /* code styles */
   code {
-    font-family: monospace;
-    font-size: 1.8rem;
-    color: #8c0000;
+    font-family: monospace; /* set font family */
+    font-size: 1.8rem;/* set font size */
+    color: #8c0000;/* set text color */
   }
 }
   
-  /* Package Grid */
+/* Package Grid */
 .package-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  display: grid;/* display grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* create responsive grid columns */
+  gap: 2rem; /* add gap */
 }
 
 .package-card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #fafafa;
-  text-decoration: none;
-  color: #000;
-  transition: transform 0.2s ease;
-  max-width: 400px;
+  border: 1px solid #ccc; /* add border */
+  border-radius: 10px; /* add border radius */
+  overflow: hidden;/* hide overflow */
+  background: #fafafa;/* set background color */
+  text-decoration: none;/* remove text decoration */
+  color: #000;/* set text color */
+  transition: transform 0.2s ease;/* add transition effect */
+  max-width: 400px;/* set max width */
 }
   
 .package-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px);/* add hover effect */
 }
   
 .package-card img {
-  height: 200px;
-  object-fit: cover;
-  width:100%;
-  max-width: 100%;
+  height: 200px;/* set image height */
+  object-fit: cover; /* set object fit */
+  width:100%; /* take full width */
+  max-width: 100%;/* make images responsive */
 }
   
 .package-card h3 {
-  font-size: 1.2rem;
-  color: #8c0000;
-  padding: 1rem 1rem 0.5rem;
+  font-size: 1.2rem;/* set font size */
+  color: #8c0000;/* set text color */
+  padding: 1rem 1rem 0.5rem;/* add padding */
   }
   
 .package-card p {
-  padding: 0 1rem 1rem;
-  font-size: 0.95rem;
+  padding: 0 1rem 1rem;/* add padding */
+  font-size: 0.95rem;/* set font size */
 }
   
-  /* Package Detail Page */
 
 
+/* package detail page  */
 main p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;/* add margin bottom */
+  font-size: 1rem;/* set font size */
 }
 
   
 
 
   
-  /* Global styles */
-
-  
+/* book button */
 .book-button {
-  display: inline-block;
-  margin: 0 1rem 1rem;
-  background-color: #152651 ;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight:normal;
+  display: inline-block; /* display as inline block */
+  margin: 0 1rem 1rem;/* add margin */
+  background-color: #152651 ;/* set background color */
+  color: #fff;/* set text color */
+  text-decoration: none;/* remove text decoration */
+  padding: 0.5rem 1rem; /* add padding */
+  border-radius: 6px; /* add border radius */
+  font-size: 0.8rem;/* set font size */
+  text-transform: uppercase;/* set text transform */
+  font-weight:normal; /* set font weight */
   
 }
   
-.book-button:hover {background-color: #29388a;}
+.book-button:hover {background-color: #29388a;} /* set hover background color */
   
  
 
   
-  /* Layout: Image Left + Details Right */
-
-
-
+ /* package detail styles Image Left + Details Right */
 .package-detail {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  display: flex; /* display flex */
+  flex-wrap: wrap;/* wrap elements to next line */
+  justify-content: center; /* justify content horizontally */
+  gap: 20px; /* add gap */
+  padding: 20px;/* add padding */
 }
   
-  /* Image Section */
-
+/* Image Section */
 .detail-image {
-  width: 100%;
-  max-height: 800px;
-  object-fit: cover;
-  margin-bottom: 2rem;
+  width: 100%; /* take full width */
+  max-height: 800px; /* set max height */
+  object-fit: cover; /* set object fit */
+  margin-bottom: 2rem; /* add margin bottom */
 }
   
   /* Detail Content Section */
 .detail-content {
-  width: 55%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  width: 55%;  /* take 55% width */
+  display: flex;/* display flex */
+  flex-direction: column; /* set flex direction */
+  gap: 20px;/* add gap */
 }
 
-  
-      /* Image Section */
-
+/* Image Section */
 .detail-img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  object-fit: cover;
+  width: 100%; /* take full width */
+  height: auto; /* set height to auto */
+  border-radius: 4px;/* add border radius */
+  object-fit: cover;/* set object fit */
 }
 
 
   
 
-  /* Each Box */
+  /* Each detail Box */
 .detail-box {
-  background-color: #dce5f8e6;
-  border-left: 5px solid #152651;
-  padding: 8px 12px;
-  border-radius: 4px;
-  margin-bottom: 12px;
+  background-color: #dce5f8e6;/* set background color */
+  border-left: 5px solid #152651;/* add border left */
+  padding: 8px 12px;/* add padding */
+  border-radius: 4px; /* add border radius */
+  margin-bottom: 12px;/* add margin bottom */
 }
 .detail-box h3 {
   font-size: 1rem;
   padding: 1px;
-  margin-bottom: 6px;      /* Tight spacing below heading */
+  margin-bottom: 6px;/* Tight spacing below heading */
 }
   
 .detail-box p,
 .detail-box li {
   font-size: 0.8rem;
-  line-height: 1.2;        /* Compact line height */
-  margin-bottom: 3px;      /* Less margin between lines */
+  line-height: 1.2;/* Compact line height */
+  margin-bottom: 3px;/* Less margin between lines */
   margin-left: 6px;
   padding: 5px;
   
  }
   
-.detail-box ul {padding-left: 0;}
+.detail-box ul {
+  padding-left: 0; /* remove padding left */
+}
   
 .detail-box li::before {
   margin-right: 8px;
   color: #152651;
 }
   
+/* image wrap styles */
 .image-wrap {
   width: 40%;
   max-width: 400px;
-  position: relative;
+  position: relative; /* set position */
 }
 
 
@@ -245,55 +232,61 @@ main p {
 .image-wrap img {
   width: 100%;
   height: 100%;
-  display: block;
+  display: block;/* display as block */
   border-radius: 4px;
-  object-fit: cover; 
+  object-fit: cover; /* set object fit */
 }
 
 .image-text {
-  position: absolute;
+  position: absolute; /* set position */
+  /* center horizontally and vertically */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
-  font-size: 5vw;
-  font-weight: bold;
+  font-size: 5vw; /* set font size */
+  font-weight: bold; /* set font weight */
   color: rgba(253, 253, 253, 0.719);
-  text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.642);
-  letter-spacing: 8px;
-  white-space: nowrap;
-  z-index: 1;
-  font-family: "Tagesschrift", system-ui;
+  text-shadow: 2px 6px 8px rgba(0, 0, 0, 0.642);/* add text shadow */
+  letter-spacing: 8px;/* add letter spacing */
+  white-space: nowrap;/* prevent wrapping */
+  z-index: 1; /* set z index */
+  font-family: "Tagesschrift", system-ui;/* set font family */
 }
 
   
 
-
+/* animate image text */
 .image-text span {
-    opacity: 0;
-    animation: fadeIn 0.3s ease forwards;
+    opacity: 0; /* set initial opacity */
+    animation: fadeIn 0.3s ease forwards;/* animate opacity */
   }
   
   @keyframes fadeIn {
     to {
-      opacity: 1;
+      opacity: 1;/* set final opacity */
     }
   }
 
+  /* animate detail box */
 .detail-box {
+  /* set initial opacity and transform */
   opacity: 0;
   transform: translateX(100%);
 }
 
 .detail-box.show {
+  /* animate opacity and transform */
   animation: slideIn 0.6s ease forwards;
 }
 
 @keyframes slideIn {
   from {
+    /* set initial opacity and transform */
     opacity: 0;
     transform: translateX(100%);
   }
   to {
+    /* set final opacity and transform */
     opacity: 1;
     transform: translateX(0);
   }
@@ -368,7 +361,7 @@ footer {
     border-top: 1px solid #333;
 }
 
- 
+ /* media query for small screens */
 @media (max-width: 768px) {
   .package-detail {
     flex-direction: column;
@@ -401,7 +394,21 @@ footer {
     font-size: 20px;
   }
 }
-  
+
+/* media query for small screens */
+@media (max-width: 768px) {
+  .package-detail {
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;/* center elements horizontally */
+  }    
+  .section h2 {
+    font-size: 1.5rem; /* reduce font size */
+  }
+
+  .detail-img,
+  .detail-content {
+    width: 100%;   /* take full width */
+  }}
 
   
 
