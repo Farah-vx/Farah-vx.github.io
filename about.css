@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* body styles */
 body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
@@ -11,6 +12,7 @@ body {
     background-color: #fff;
 }
 
+/* header styles */
 header {
     background-color: #dedede;
     padding: 1rem 2rem;
@@ -20,17 +22,20 @@ header {
     flex-wrap: wrap;
 }
 
+/* header title styles */
 header h1 {
     font-size: 1.8rem;
     color: #000;
 }
 
+/* site title styles */
 h1.site-title {
     color: #000000;
     font-weight: 600;
     font-size: 1.8rem;
 }
  
+/* navigation link styles */
 nav a {
     margin-left: 1rem;
     text-decoration: none;
@@ -38,11 +43,13 @@ nav a {
     font-weight: 600;
   }
  
+ /* navigation link hover and active styles */
  nav a:hover,
  nav a.active {
     color: #8c0000;
 }
 
+/* start section styles */
 .start {
     background: url('https://www.luxurygold.com/lg/wp-content/uploads/2024/11/Large-Miyajima-Island-Hiroshima-Japan-in-spring-1132298347.jpg') no-repeat center center/cover;
     height: 85vh;
@@ -54,6 +61,7 @@ nav a {
     
 }
 
+/* start text styles */
 .start-text h1 {
     font-size: 3rem;
     font-weight: bold;
@@ -61,11 +69,13 @@ nav a {
     
 }
 
+/* start text paragraph styles */
 .start-text p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
   }
 
+/* container styles */
 .container {
     max-width: 1100px;
     margin: auto;
@@ -73,6 +83,7 @@ nav a {
 
 }
 
+/* about and mission heading styles */
 .about h2,
 .mission h2 {
     font-size: 2rem;
@@ -81,6 +92,7 @@ nav a {
      font-family: "Electrolize", sans-serif;
 }
 
+/* about and mission paragraph styles */
 .about p,
 .mission p {
     font-size: 1.1rem;
@@ -88,12 +100,14 @@ nav a {
     margin: auto;
   }
 
+/* values section styles */
 .values {
     background-color: #eaeaea;
     text-align: center;
     padding: 1rem 2rem;
 }
 
+/* value box styles */
 .value-box {
     display: inline-block;
     width: 30%;
@@ -102,19 +116,23 @@ nav a {
     vertical-align: top;
 }
 
+/* value box image styles */
 .value-box img {
     width: 60px;
     height: 60px;
 }
 
+/* value box heading styles */
 .value-box h3 {
     margin: 1rem 0 0.5rem;
 }
 
+/* value box paragraph styles */
 .value-box p {
     font-size: 0.95rem;
 }
 
+/* why us box styles */
 .WU-box {
     background-color:#ffffff ;
     color: #000000;
@@ -123,11 +141,13 @@ nav a {
     font-family: "Electrolize", sans-serif;
 }
 
+/* why us list styles */
 .WU-box li{
     padding:0.6rem ;
     list-style: none;
 }
 
+/* container dark styles */
 .container-dark {
     background-color: #1f1f1f;
     color: #fff;
@@ -137,6 +157,7 @@ nav a {
     font-family: "Electrolize", sans-serif;
 }
 
+/* button styles */
 .container-dark button {
     padding: 0.7rem 1.5rem;
     background-color: #f54c4c;
@@ -148,12 +169,13 @@ nav a {
     cursor: pointer;
 }
 
+/* button hover styles */
 .container-dark button:hover {
     background-color: #d63b3b;
 }
 
 
-  /* Responsive */
+/* responsive styles */
 @media (max-width: 768px) {
     .value-box {
       width: 90%;
