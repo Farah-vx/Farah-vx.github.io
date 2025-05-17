@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 
+/* body styles */
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9fb;
   color: #333;
 }
 
+/* header styles */
 header {
   background-color: #dedede;
   padding: 1rem 2rem;
@@ -19,17 +21,20 @@ header {
   flex-wrap: wrap;
 }
 
+/* header title styles */
 header h1 {
   font-size: 1.8rem;
   color: #000;
 }
 
+/* site title styles */
 h1.site-title {
   color: #000000;
   font-weight: 600;
   font-size: 1.8rem;
 }
 
+/* navigation link styles */
 nav a {
   margin-left: 1rem;
   text-decoration: none;
@@ -37,11 +42,13 @@ nav a {
   font-weight: 600;
 }
 
+/* navigation link hover and active styles */
 nav a:hover,
 nav a.active {
   color: #8c0000;
 }
 
+/* booking head styles */
 .booking-head {
   background: linear-gradient(rgba(0, 0, 0, 0.409), rgba(0, 0, 0, 0.34)),
     url('https://going-cms-strapi.s3.us-east-1.amazonaws.com/web_1920x1200_dotonbori_ecfbde0187.webp') no-repeat center center/cover;
@@ -50,22 +57,26 @@ nav a.active {
   text-align: center;
 }
 
+/* booking head heading styles */
 .booking-head h1 {
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
   font-family: "Electrolize", sans-serif;
 }
 
+/* booking head paragraph styles */
 .booking-head p {
   font-size: 1.1rem;
 }
 
+/* container styles */
 .container {
   max-width: 1000px;
   margin: 6rem auto;
   padding: 0 1rem;
 }
 
+/* booking form styles */
 .booking-form {
   background: #fff;
   padding: 2rem;
@@ -80,16 +91,19 @@ nav a.active {
   color: #0a0a23;
 }
 
+/* form group styles */
 .form-group {
   margin-bottom: 1.2rem;
 }
 
+/* form label styles */
 .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
+/* form input and textarea styles */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -100,11 +114,13 @@ nav a.active {
   font-size: 1rem;
 }
 
+/* textarea styles */
 .form-group textarea {
   resize: vertical;
   height: 100px;
 }
 
+/* submit button styles */
 .submit-booking {
   background-color: #e63946;
   color: white;
@@ -118,10 +134,12 @@ nav a.active {
   display: inline-block;
 }
 
+/* submit button hover styles */
 .submit-booking:hover {
   background-color: #c62828;
 }
 
+/* media query for small screens */
 @media (max-width: 768px) {
   .booking-head h1 {
     font-size: 2rem;

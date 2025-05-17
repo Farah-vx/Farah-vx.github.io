@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!-- define document type and language -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,9 +6,10 @@
   <title>Booking | Luxe Japan</title>
   <link rel="stylesheet" href="booking.css">
   <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png"  href="fevicon.png">
+  <link rel="icon" type="image/png"  href="favicon.png">
 </head>
 <body>
+    <!-- header section -->
     <header>
         <h1>Luxe Japan</h1>
         <nav>
@@ -20,26 +21,33 @@
         </nav>
       </header>
 
+  <!-- booking head section -->
   <div class="booking-head">
     <h1>Book Your Journey</h1>
     <p>Start your luxury adventure with Luxe Japan today</p>
   </div>
 
+  <!-- container for booking form -->
   <div class="container">
+    <!-- booking form -->
     <form class="booking-form">
+      <!-- form group for full name -->
       <div class="form-group">
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" required>
       </div>
 
+      <!-- form group for email address -->
       <div class="form-group">
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" required>
       </div>
 
+       <!-- form group for package selection -->
       <div class="form-group">
         <label for="package">Select a Package</label>
         <select id="package" name="package" required>
+          <!-- options for packages -->
           <option value="">-- Choose a Package --</option>
           <option value="tokyo">Tokyo Urban Explorer</option>
           <option value="kyoto">Kyoto Serenity Escape</option>
@@ -53,26 +61,30 @@
         </select>
       </div>
 
+      <!-- form group for preferred travel date -->
       <div class="form-group">
         <label for="date">Preferred Travel Date</label>
         <input type="date" id="date" name="date" required>
       </div>
 
+      <!-- form group for number of people -->
       <div class="form-group">
         <label for="people">Number of People</label>
         <input type="number" id="people" name="people" min="1" max="20" required>
       </div>
 
+      <!-- form group for additional notes -->
       <div class="form-group">
         <label for="notes">Additional Notes</label>
         <textarea id="notes" name="notes" placeholder="Special requests or requirements"></textarea>
       </div>
 
-    
+      <!-- submit button -->
       <a href="thankYou.html" class="submit-booking" type="submit">Reserve Booking</a>
     </form>
   </div>
 
+<!-- footer section -->
 <footer>
       <div class="footer-container">
         <div class="footer-column">
