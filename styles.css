@@ -1,79 +1,84 @@
 /* reset styles for consistent rendering */
 * {
+  /* reset margins and padding */
   margin: 0;
   padding: 0;
+  /* include padding and border in element's total width and height */
   box-sizing: border-box;
 }
-/* make images responsive */
+/* make images responsive to parent container */
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%;/* set maximum width to parent container */
+  height: auto;/* maintain aspect ratio */
 }
 
 /* base body styles */
 body {
+    /* set font family and fallback */
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #ffffff; /* set background color */
+  color: #000000;/* set text color */
 }
 
 /* header container styling */
 header {
-  background-color: #dedede;
-  padding: 1rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  background-color: #dedede;/* set background color */
+  padding: 1rem 2rem;/* add padding */
+  display: flex;/* display header as flex container */
+  justify-content: space-between; /* justify content horizontally */
+  align-items: center;  /* align items vertically */
+  flex-wrap: wrap;/* wrap elements to next line */
   
 }
 
 /* main site title styling */
 header h1 {
-  font-size: 1.8rem;
-  color: #000;
+  font-size: 1.8rem;/* set font size */
+  color: #000; /* set text color */
 }
 
 
 h1.site-title {
-  color: #000000;
-  font-weight: 600;
-  font-size: 1.8rem;
+  color: #000000; /* set text color */
+  font-weight: 600; /* set font weight */
+  font-size: 1.8rem;/* set font size */
 }
  
 /* navigation link styles */
 nav a {
-  margin-left: 1rem;
-  text-decoration: none;
-  color: #000;
-  font-weight: 600;
+  margin-left: 1rem; /* add margin */
+  text-decoration: none; /* remove text decoration */
+  color: #000;/* set text color */
+  font-weight: 600;/* set font weight */
   }
  
  nav a:hover,
  nav a.active {
-    color: #8c0000;
+    color: #8c0000; /* set hover and active link color */
 }
 
 /* container for auto-swiping background images */
 .auto-swipe {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+  height: 100vh;/* set height */
+  overflow: hidden; /* hide overflow */
+  position: relative;/* set position */
 }
 
 /* styles for background images in swipe animation */
 .auto-swipe img {
-  position: absolute;
+  position: absolute; /* set position */
+   /* take full width and the height */
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  animation: slide 24s infinite;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
+  object-fit: cover; /* set object fit */
+  animation: slide 24s infinite;  /* animate opacity */
+  opacity: 0;  /* set initial opacity */
+  transition: opacity 1s ease-in-out; /* add transition effect */
+  z-index: 0; /* set z index */
 }
 
 /* animation delays for swipe effect */
+                              /* set animation delay */
 .auto-swipe img:nth-child(1) { animation-delay: 0s; }
 .auto-swipe img:nth-child(2) { animation-delay: 6s; }
 .auto-swipe img:nth-child(3) { animation-delay: 12s; }
@@ -81,19 +86,22 @@ nav a {
 
 /* keyframes for fade-in and fade-out swipe effect */
 @keyframes slide {
-  0% { opacity: 0; }
-  5% { opacity: 1; }
-  25% { opacity: 1; }
-  30% { opacity: 0; }
-  100% { opacity: 0; }
+    /* set opacity */
+  0% { opacity: 0; }/* initial state */
+  5% { opacity: 1; } /* fade in */
+  25% { opacity: 1; }/* stay visible */
+  30% { opacity: 0; }/* fade out */
+  100% { opacity: 0; }/* final state */
 }
 
 /* gradient overlay for better text visibility */
 .auto-swipe::before {
-  content: '';
-  position: absolute;
+  content: '';/* set content */
+  position: absolute; /* set position */
+  /* set top and left positions */
   top: 0;
   left: 0;
+  /* take full width and height */
   width: 40%;
   height: 100%;
   background: linear-gradient(to right, rgba(50, 50, 50, 0.701), rgba(155, 155, 155, 0.345));
@@ -122,7 +130,7 @@ nav a {
   line-height: 1.3;
 }
 
-/* generic section container styles */
+/* section container styles */
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
